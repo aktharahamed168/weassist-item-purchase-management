@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/api/items"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Notebook",
+      "item_type_id": 1,
+      "purchase_date": "2026-11-25",
+      "stock_available": 20,
+      "active": true
+    }
+order: 1000

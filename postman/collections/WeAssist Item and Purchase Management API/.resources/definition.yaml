@@ -1,0 +1,4 @@
+$kind: collection
+description: API collection for the WeAssist Item and Purchase Management System.
+variables:
+  baseUrl: http://localhost:5000

@@ -1,0 +1,152 @@
+
+{
+  "info": {
+    "name": "WeAssist Item and Purchase Management API",
+    "description": "API collection for the WeAssist Item and Purchase Management System.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Item Types",
+      "item": [
+        {
+          "name": "Create Item Type",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type_name\": \"Stationery\"\n}"
+            },
+            "url": "{{baseUrl}}/api/item-types"
+          }
+        },
+        {
+          "name": "Get All Item Types",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/item-types"
+          }
+        },
+        {
+          "name": "Update Item Type",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type_name\": \"Office Supplies\"\n}"
+            },
+            "url": "{{baseUrl}}/api/item-types/1"
+          }
+        },
+        {
+          "name": "Delete Item Type",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}/api/item-types/1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Items",
+      "item": [
+        {
+          "name": "Create Item",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Notebook\",\n  \"item_type_id\": 1,\n  \"purchase_date\": \"2026-11-25\",\n  \"stock_available\": 20,\n  \"active\": true\n}"
+            },
+            "url": "{{baseUrl}}/api/items"
+          }
+        },
+        {
+          "name": "Get All Items",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/items"
+          }
+        },
+        {
+          "name": "Get Item By ID",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/items/1"
+          }
+        },
+        {
+          "name": "Update Item",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Notebook\",\n  \"item_type_id\": 1,\n  \"purchase_date\": \"2026-11-25\",\n  \"stock_available\": 25,\n  \"active\": true\n}"
+            },
+            "url": "{{baseUrl}}/api/items/1"
+          }
+        },
+        {
+          "name": "Delete Item",
+          "request": {
+            "method": "DELETE",
+            "url": "{{baseUrl}}/api/items/1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Purchases",
+      "item": [
+        {
+          "name": "Create Purchase",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"order_id\": \"PO-TEST-001\",\n  \"purchase_date\": \"2026-11-25\",\n  \"items\": [\n    {\n      \"item_id\": 1,\n      \"quantity\": 2\n    }\n  ]\n}"
+            },
+            "url": "{{baseUrl}}/api/purchases"
+          }
+        },
+        {
+          "name": "Get All Purchases",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/purchases"
+          }
+        },
+        {
+          "name": "Get Purchase By ID",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/purchases/1"
+          }
+        },
+        {
+          "name": "Update Purchase",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"order_id\": \"PO-TEST-001\",\n  \"purchase_date\": \"2026-11-25\",\n  \"items\": [\n    {\n      \"item_id\": 1,\n      \"quantity\": 3\n    }\n  ]\n}"
+            },
+            "url": "{{baseUrl}}/api/purchases/1"
+          }
+        }
+      ]
+    }
+  ]
+}

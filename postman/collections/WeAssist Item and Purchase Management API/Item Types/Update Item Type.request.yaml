@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/item-types/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "type_name": "Office Supplies"
+    }
+order: 3000

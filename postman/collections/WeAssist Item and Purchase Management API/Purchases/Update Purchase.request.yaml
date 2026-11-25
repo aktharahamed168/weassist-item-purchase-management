@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/api/purchases/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "order_id": "PO-TEST-001",
+      "purchase_date": "2026-11-25",
+      "items": [
+        {
+          "item_id": 1,
+          "quantity": 3
+        }
+      ]
+    }
+order: 4000

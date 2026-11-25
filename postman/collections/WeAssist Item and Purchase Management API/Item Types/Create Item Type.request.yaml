@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/item-types"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "type_name": "Stationery"
+    }
+order: 1000
