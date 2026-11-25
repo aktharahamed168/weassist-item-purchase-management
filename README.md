@@ -337,6 +337,10 @@ To test the APIs:
 
 The collection includes requests for Item Types, Items, and Purchases.
 
+## 🌐 Live Demo
+
+[View WeAssist Live Website](https://aktharahamed168.github.io/weassist-item-purchase-management/)
+
 ---
 ![Item Type Management](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/01-item-types.png)
 
