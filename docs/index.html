@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeAssist - Item & Purchase Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>WeAssist</h1>
+        <p>Item & Purchase Management System</p>
+        <span>Static Demo Preview</span>
+    </header>
 
+    <nav>
+        <button onclick="showSection('types')">Item Types</button>
+        <button onclick="showSection('items')">Items</button>
+        <button onclick="showSection('purchases')">Purchases</button>
+        <button onclick="showSection('stock')">Stock Availability</button>
+    </nav>
+
+    <main>
+        <p class="notice">This is a static preview with sample data. Live database operations require the backend server.</p>
+
+        <section id="types">
+            <h2>Item Types</h2>
+            <div id="typeList"></div>
+        </section>
+
+        <section id="items" hidden>
+            <h2>Items</h2>
+            <div id="itemList"></div>
+        </section>
+
+        <section id="purchases" hidden>
+            <h2>Purchase History</h2>
+            <div id="purchaseList"></div>
+            <h3>Purchase Details</h3>
+            <div id="purchaseDetails">Select a purchase to view details.</div>
+        </section>
+
+        <section id="stock" hidden>
+            <h2>Stock Availability</h2>
+            <div id="stockList"></div>
+        </section>
+    </main>
+
+    <footer>WeAssist Item & Purchase Management System</footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
