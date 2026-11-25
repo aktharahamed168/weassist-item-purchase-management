@@ -338,37 +338,19 @@ To test the APIs:
 The collection includes requests for Item Types, Items, and Purchases.
 
 ---
+![Item Type Management](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/01-item-types.png)
 
-## Application Screenshots
+![Item List](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/02-item-list.png)
 
-### 1. Item Type Management
+![Add Edit Item](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/03-add-edit-item.png)
 
-![Item Type Management](screenshots/01-item-types.png)
+![Create Purchase](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/04-create-purchase.png)
 
-### 2. Item List
+![Purchase History](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/05-purchase-history.png)
 
-![Item List](screenshots/02-item-list.png)
+![Purchase Details](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/06-purchase-details.png)
 
-### 3. Add / Edit Item
-
-![Add Edit Item](screenshots/03-add-edit-item.png)
-
-### 4. Create Purchase
-
-![Create Purchase](screenshots/04-create-purchase.png)
-
-### 5. Purchase History
-
-![Purchase History](screenshots/05-purchase-history.png)
-
-### 6. Purchase Details
-
-![Purchase Details](screenshots/06-purchase-details.png)
-
-### 7. Stock Availability
-
-![Stock Availability](screenshots/07-stock-availability.png)
-
+![Stock Availability](https://raw.githubusercontent.com/aktharahamed168/weassist-item-purchase-management/main/screenshots/07-stock-availability.png)
 ---
 
 ## Author
